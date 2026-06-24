@@ -1,0 +1,548 @@
+<!-- BRAND: Autopilot Studio (placeholder — find/replace to rename) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Autopilot Studio — AI Automations for Small Business</title>
+  <meta name="description" content="Autopilot Studio builds and manages done-for-you AI automations for small and local businesses. Auto-reply to leads, capture inquiries 24/7, and get time back — managed monthly." />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Autopilot Studio — AI Automations for Small Business" />
+  <meta property="og:description" content="We build & run the AI automations that save you hours — done for you, managed monthly." />
+  <meta property="og:url" content="https://autopilot.studio" />
+  <!-- TODO: replace og:image with a real hero screenshot -->
+  <!-- <meta property="og:image" content="https://autopilot.studio/og-image.png" /> -->
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4.3.1/dist/index.global.js"
+    integrity="sha384-H7HZ1mz/og5ZEIoB7pO+p3ri0JloxRfmUC+pRHvWodtLXNFLBh6x3GNtbybc4oRb"
+    crossorigin="anonymous"></script>
+  <style type="text/tailwindcss">
+    @theme {
+      --color-brand-50:  #f0fdf6;
+      --color-brand-100: #dcfce9;
+      --color-brand-500: #10b981;
+      --color-brand-600: #059669;
+      --color-brand-700: #047857;
+      --color-brand-900: #064e3b;
+      --color-ink:       #0b1220;
+      --font-sans: "Inter", system-ui, sans-serif;
+    }
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    html { scroll-behavior: smooth; }
+    .gradient-hero {
+      background: linear-gradient(135deg, #0b1220 0%, #0f2027 60%, #064e3b 100%);
+    }
+    .card-hover {
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .card-hover:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 40px rgba(16, 185, 129, 0.12);
+    }
+  </style>
+</head>
+<body class="font-sans bg-white text-ink antialiased">
+
+<!-- ============================================================
+     NAV
+     ============================================================ -->
+<header class="fixed top-0 inset-x-0 z-50 bg-ink/95 backdrop-blur border-b border-white/5">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 flex items-center justify-between h-16">
+    <a href="#" class="flex items-center gap-2">
+      <!-- Simple SVG wordmark icon -->
+      <svg class="w-7 h-7 text-brand-500" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect width="28" height="28" rx="6" fill="currentColor" fill-opacity="0.15"/>
+        <path d="M7 14a7 7 0 1 1 14 0" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+        <circle cx="14" cy="14" r="2.5" fill="currentColor"/>
+        <path d="M14 11.5V8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+      <span class="text-white font-bold text-lg tracking-tight">Autopilot <span class="text-brand-500">Studio</span></span>
+    </a>
+    <nav class="hidden md:flex items-center gap-8 text-sm text-white/70">
+      <a href="#how-it-works" class="hover:text-white transition-colors">How it works</a>
+      <a href="#offers" class="hover:text-white transition-colors">Services</a>
+      <a href="#faq" class="hover:text-white transition-colors">FAQ</a>
+    </nav>
+    <!-- TODO: booking link — replace href when Calendly/booking page is ready -->
+    <a href="mailto:egiraldmu@gmail.com?subject=Automation%20audit%20request"
+       class="hidden sm:inline-flex items-center gap-2 bg-brand-500 hover:bg-brand-600 text-white text-sm font-semibold px-4 py-2 rounded-lg transition-colors">
+      Book free audit
+    </a>
+  </div>
+</header>
+
+
+<!-- ============================================================
+     HERO
+     ============================================================ -->
+<section class="gradient-hero pt-28 pb-24 px-4 sm:px-6">
+  <div class="max-w-4xl mx-auto text-center">
+    <span class="inline-block bg-brand-500/15 text-brand-500 text-xs font-semibold uppercase tracking-widest px-3 py-1 rounded-full mb-6">
+      Done-for-you AI automations
+    </span>
+    <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white leading-tight">
+      We build &amp; run the AI automations<br class="hidden sm:block" />
+      <span class="text-brand-500">that save you hours.</span>
+    </h1>
+    <p class="mt-6 text-lg sm:text-xl text-white/70 max-w-2xl mx-auto">
+      Done for you. Managed monthly. No tech headaches — just more time back and fewer leads slipping through the cracks.
+    </p>
+    <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
+      <!-- TODO: booking link -->
+      <a href="mailto:egiraldmu@gmail.com?subject=Automation%20audit%20request"
+         class="inline-flex items-center justify-center gap-2 bg-brand-500 hover:bg-brand-600 text-white font-bold px-8 py-4 rounded-xl text-base sm:text-lg transition-colors shadow-lg shadow-brand-900/40">
+        Book a free automation audit
+        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+      </a>
+      <a href="https://egiraldmu1795.github.io/ai-workflow-pack/"
+         target="_blank" rel="noopener"
+         class="inline-flex items-center justify-center gap-2 border border-white/20 hover:border-brand-500 text-white/80 hover:text-white font-semibold px-8 py-4 rounded-xl text-base sm:text-lg transition-colors">
+        DIY? Get our Workflow Pack
+      </a>
+    </div>
+    <p class="mt-5 text-white/40 text-sm">No pressure. A 30-min call, free.</p>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     PROBLEM
+     ============================================================ -->
+<section class="bg-white py-20 px-4 sm:px-6">
+  <div class="max-w-5xl mx-auto">
+    <div class="text-center mb-14">
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-ink">Sound familiar?</h2>
+      <p class="mt-3 text-ink/60 text-lg max-w-xl mx-auto">Small and local businesses are drowning in repetitive manual work while leads quietly walk out the door.</p>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Pain card -->
+      <div class="bg-gray-50 border border-gray-100 rounded-2xl p-6">
+        <div class="text-2xl mb-3">📬</div>
+        <h3 class="font-bold text-ink mb-2">Leads go cold</h3>
+        <p class="text-ink/60 text-sm">An inquiry comes in at 9 pm on a Friday. You get to it Monday. They already went with someone else.</p>
+      </div>
+      <div class="bg-gray-50 border border-gray-100 rounded-2xl p-6">
+        <div class="text-2xl mb-3">🔁</div>
+        <h3 class="font-bold text-ink mb-2">Same questions, every day</h3>
+        <p class="text-ink/60 text-sm">Hours per week answering "what are your hours?", "do you offer X?" — the same handful of questions, over and over.</p>
+      </div>
+      <div class="bg-gray-50 border border-gray-100 rounded-2xl p-6">
+        <div class="text-2xl mb-3">🧩</div>
+        <h3 class="font-bold text-ink mb-2">Tools that don't talk</h3>
+        <p class="text-ink/60 text-sm">You copy-paste between your booking tool, spreadsheet, and email because nothing is connected.</p>
+      </div>
+      <div class="bg-gray-50 border border-gray-100 rounded-2xl p-6">
+        <div class="text-2xl mb-3">🤖</div>
+        <h3 class="font-bold text-ink mb-2">"AI" that needs babysitting</h3>
+        <p class="text-ink/60 text-sm">You tried a chatbot once. It broke in week two. Nobody had time to fix it. Back to answering DMs manually.</p>
+      </div>
+      <div class="bg-gray-50 border border-gray-100 rounded-2xl p-6">
+        <div class="text-2xl mb-3">🌐</div>
+        <h3 class="font-bold text-ink mb-2">Invisible to AI search</h3>
+        <p class="text-ink/60 text-sm">When someone asks ChatGPT "best [your service] near me," your business doesn't come up — because nobody's managed your AI presence.</p>
+      </div>
+      <div class="bg-gray-50 border border-gray-100 rounded-2xl p-6">
+        <div class="text-2xl mb-3">⏳</div>
+        <h3 class="font-bold text-ink mb-2">No time to fix it</h3>
+        <p class="text-ink/60 text-sm">You know automation could help. But learning it, building it, and keeping it running? That's a part-time job you don't have.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     HOW IT WORKS
+     ============================================================ -->
+<section id="how-it-works" class="bg-ink py-20 px-4 sm:px-6">
+  <div class="max-w-5xl mx-auto">
+    <div class="text-center mb-14">
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-white">How Autopilot Studio works</h2>
+      <p class="mt-3 text-white/60 text-lg max-w-xl mx-auto">Three steps, and we handle most of the heavy lifting.</p>
+    </div>
+    <div class="grid sm:grid-cols-3 gap-8">
+      <div class="text-center">
+        <div class="inline-flex items-center justify-center w-14 h-14 rounded-full bg-brand-500/15 text-brand-500 text-2xl font-extrabold mb-5">1</div>
+        <h3 class="font-bold text-white text-lg mb-2">Free audit call</h3>
+        <p class="text-white/60 text-sm">We spend 30 minutes understanding your business — where time is lost, where leads slip through. No pitch, just a map of what can be automated.</p>
+      </div>
+      <div class="text-center">
+        <div class="inline-flex items-center justify-center w-14 h-14 rounded-full bg-brand-500/15 text-brand-500 text-2xl font-extrabold mb-5">2</div>
+        <h3 class="font-bold text-white text-lg mb-2">We build it</h3>
+        <p class="text-white/60 text-sm">We build your automation using the same agent network that powers our own operations. Flat setup fee, no surprises. You review it before anything goes live.</p>
+      </div>
+      <div class="text-center">
+        <div class="inline-flex items-center justify-center w-14 h-14 rounded-full bg-brand-500/15 text-brand-500 text-2xl font-extrabold mb-5">3</div>
+        <h3 class="font-bold text-white text-lg mb-2">We manage it</h3>
+        <p class="text-white/60 text-sm">Monthly retainer. We monitor, tune, and update it. If something breaks, we fix it — not you. Your job is running your business.</p>
+      </div>
+    </div>
+    <div class="mt-12 text-center">
+      <!-- TODO: booking link -->
+      <a href="mailto:egiraldmu@gmail.com?subject=Automation%20audit%20request"
+         class="inline-flex items-center gap-2 bg-brand-500 hover:bg-brand-600 text-white font-bold px-8 py-4 rounded-xl text-base transition-colors">
+        Book a free automation audit
+        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     OFFERS / PRICING
+     ============================================================ -->
+<section id="offers" class="bg-white py-20 px-4 sm:px-6">
+  <div class="max-w-6xl mx-auto">
+    <div class="text-center mb-14">
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-ink">Three productized services</h2>
+      <p class="mt-3 text-ink/60 text-lg max-w-xl mx-auto">Flat setup. Flat monthly. No hourly billing, no scope creep — you always know what you're paying.</p>
+    </div>
+    <div class="grid lg:grid-cols-3 gap-8 items-start">
+
+      <!-- AI Front Desk — FEATURED -->
+      <div class="card-hover relative border-2 border-brand-500 rounded-2xl p-8 shadow-xl shadow-brand-900/10 order-first lg:order-none">
+        <div class="absolute -top-3 left-1/2 -translate-x-1/2">
+          <span class="bg-brand-500 text-white text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full">Most popular</span>
+        </div>
+        <div class="text-3xl mb-4">📱</div>
+        <h3 class="text-xl font-extrabold text-ink mb-1">AI Front Desk</h3>
+        <p class="text-ink/60 text-sm mb-6">Auto-reply and lead capture across email, Instagram DMs, and WhatsApp — 24/7, in your brand voice.</p>
+        <div class="mb-6">
+          <div class="flex items-baseline gap-1">
+            <span class="text-4xl font-extrabold text-ink">$499</span>
+            <span class="text-ink/50 text-sm">one-time setup</span>
+          </div>
+          <div class="flex items-baseline gap-1 mt-1">
+            <span class="text-2xl font-bold text-brand-600">$200</span>
+            <span class="text-ink/50 text-sm">/ month managed</span>
+          </div>
+        </div>
+        <ul class="space-y-3 text-sm text-ink/70 mb-8">
+          <li class="flex gap-2"><span class="text-brand-500 font-bold mt-0.5">✓</span> Instant auto-reply to leads (email, IG, WhatsApp)</li>
+          <li class="flex gap-2"><span class="text-brand-500 font-bold mt-0.5">✓</span> Lead capture to your CRM or spreadsheet</li>
+          <li class="flex gap-2"><span class="text-brand-500 font-bold mt-0.5">✓</span> Custom FAQ answers trained on your business</li>
+          <li class="flex gap-2"><span class="text-brand-500 font-bold mt-0.5">✓</span> After-hours coverage — no leads lost at 10 pm</li>
+          <li class="flex gap-2"><span class="text-brand-500 font-bold mt-0.5">✓</span> Monthly tune-ups included</li>
+        </ul>
+        <!-- TODO: booking link -->
+        <a href="mailto:egiraldmu@gmail.com?subject=Automation%20audit%20request"
+           class="block w-full text-center bg-brand-500 hover:bg-brand-600 text-white font-bold py-3 rounded-xl transition-colors">
+          Get started
+        </a>
+      </div>
+
+      <!-- GEO Snapshot -->
+      <div class="card-hover border border-gray-200 rounded-2xl p-8">
+        <div class="text-3xl mb-4">🔍</div>
+        <h3 class="text-xl font-extrabold text-ink mb-1">GEO Snapshot</h3>
+        <p class="text-ink/60 text-sm mb-6">See how your business appears (or doesn't) in ChatGPT, Gemini, and Perplexity — plus a monthly fix report.</p>
+        <div class="mb-6">
+          <div class="flex items-baseline gap-1">
+            <span class="text-4xl font-extrabold text-ink">$99</span>
+            <span class="text-ink/50 text-sm">/ month</span>
+          </div>
+          <div class="text-ink/40 text-xs mt-1">Up to $199/mo for competitive niches</div>
+        </div>
+        <ul class="space-y-3 text-sm text-ink/70 mb-8">
+          <li class="flex gap-2"><span class="text-brand-500 font-bold mt-0.5">✓</span> Monthly AI visibility audit (ChatGPT / Gemini / Perplexity)</li>
+          <li class="flex gap-2"><span class="text-brand-500 font-bold mt-0.5">✓</span> Actionable fix report: what to publish, say, or update</li>
+          <li class="flex gap-2"><span class="text-brand-500 font-bold mt-0.5">✓</span> Pure recurring — no setup fee</li>
+          <li class="flex gap-2"><span class="text-brand-500 font-bold mt-0.5">✓</span> Great add-on to the AI Front Desk package</li>
+        </ul>
+        <!-- TODO: booking link -->
+        <a href="mailto:egiraldmu@gmail.com?subject=Automation%20audit%20request"
+           class="block w-full text-center border border-brand-500 hover:bg-brand-50 text-brand-600 font-bold py-3 rounded-xl transition-colors">
+          Get started
+        </a>
+      </div>
+
+      <!-- Ops Autopilot -->
+      <div class="card-hover border border-gray-200 rounded-2xl p-8">
+        <div class="text-3xl mb-4">⚙️</div>
+        <h3 class="text-xl font-extrabold text-ink mb-1">Ops Autopilot</h3>
+        <p class="text-ink/60 text-sm mb-6">Connect your existing tools — Sheets, Notion, Shopify, Slack — into automated workflows that run on their own.</p>
+        <div class="mb-6">
+          <div class="flex items-baseline gap-1">
+            <span class="text-4xl font-extrabold text-ink">$750</span>
+            <span class="text-ink/50 text-sm">one-time build</span>
+          </div>
+          <div class="flex items-baseline gap-1 mt-1">
+            <span class="text-2xl font-bold text-brand-600">$150</span>
+            <span class="text-ink/50 text-sm">/ month managed</span>
+          </div>
+        </div>
+        <ul class="space-y-3 text-sm text-ink/70 mb-8">
+          <li class="flex gap-2"><span class="text-brand-500 font-bold mt-0.5">✓</span> Custom workflow built on your actual toolstack</li>
+          <li class="flex gap-2"><span class="text-brand-500 font-bold mt-0.5">✓</span> Eliminates manual copy-paste between apps</li>
+          <li class="flex gap-2"><span class="text-brand-500 font-bold mt-0.5">✓</span> Documented so you understand what's running</li>
+          <li class="flex gap-2"><span class="text-brand-500 font-bold mt-0.5">✓</span> Monthly monitoring &amp; updates included</li>
+        </ul>
+        <!-- TODO: booking link -->
+        <a href="mailto:egiraldmu@gmail.com?subject=Automation%20audit%20request"
+           class="block w-full text-center border border-brand-500 hover:bg-brand-50 text-brand-600 font-bold py-3 rounded-xl transition-colors">
+          Get started
+        </a>
+      </div>
+
+    </div>
+
+    <!-- DIY upsell -->
+    <div class="mt-10 bg-gray-50 border border-gray-200 rounded-2xl p-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div>
+        <p class="font-semibold text-ink">Prefer to DIY?</p>
+        <p class="text-sm text-ink/60">Grab our Workflow Pack — pre-built automation templates you can deploy yourself.</p>
+      </div>
+      <a href="https://egiraldmu1795.github.io/ai-workflow-pack/"
+         target="_blank" rel="noopener"
+         class="inline-flex items-center gap-2 whitespace-nowrap border border-ink/20 hover:border-brand-500 hover:text-brand-600 text-ink font-semibold px-5 py-3 rounded-xl text-sm transition-colors">
+        Get the Workflow Pack
+        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     WHO IT'S FOR
+     ============================================================ -->
+<section class="bg-gray-50 py-20 px-4 sm:px-6">
+  <div class="max-w-5xl mx-auto">
+    <div class="text-center mb-14">
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-ink">Who this is for</h2>
+      <p class="mt-3 text-ink/60 text-lg max-w-xl mx-auto">We work best with owner-operated small and local businesses who are stretched thin but serious about growing.</p>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+      <div class="flex gap-3 bg-white border border-gray-100 rounded-xl p-5">
+        <span class="text-xl mt-0.5">🏥</span>
+        <div>
+          <p class="font-semibold text-ink text-sm">Local service businesses</p>
+          <p class="text-ink/55 text-xs mt-0.5">Clinics, salons, repair shops, gyms, contractors — any business where leads call or DM.</p>
+        </div>
+      </div>
+      <div class="flex gap-3 bg-white border border-gray-100 rounded-xl p-5">
+        <span class="text-xl mt-0.5">🛍️</span>
+        <div>
+          <p class="font-semibold text-ink text-sm">Small e-commerce &amp; retail</p>
+          <p class="text-ink/55 text-xs mt-0.5">Shops that handle customer inquiries manually or lose orders to slow response times.</p>
+        </div>
+      </div>
+      <div class="flex gap-3 bg-white border border-gray-100 rounded-xl p-5">
+        <span class="text-xl mt-0.5">🏠</span>
+        <div>
+          <p class="font-semibold text-ink text-sm">Real estate &amp; property</p>
+          <p class="text-ink/55 text-xs mt-0.5">Agents and property managers who need every inbound lead followed up — even at midnight.</p>
+        </div>
+      </div>
+      <div class="flex gap-3 bg-white border border-gray-100 rounded-xl p-5">
+        <span class="text-xl mt-0.5">📚</span>
+        <div>
+          <p class="font-semibold text-ink text-sm">Coaches &amp; consultants</p>
+          <p class="text-ink/55 text-xs mt-0.5">Solo operators spending too many hours on intake emails and scheduling instead of client work.</p>
+        </div>
+      </div>
+      <div class="flex gap-3 bg-white border border-gray-100 rounded-xl p-5">
+        <span class="text-xl mt-0.5">🍽️</span>
+        <div>
+          <p class="font-semibold text-ink text-sm">Restaurants &amp; hospitality</p>
+          <p class="text-ink/55 text-xs mt-0.5">Venues that want reservation bots, catering inquiry capture, and review monitoring without a tech team.</p>
+        </div>
+      </div>
+      <div class="flex gap-3 bg-white border border-gray-100 rounded-xl p-5">
+        <span class="text-xl mt-0.5">💼</span>
+        <div>
+          <p class="font-semibold text-ink text-sm">Professional services</p>
+          <p class="text-ink/55 text-xs mt-0.5">Law, accounting, financial advisors — anyone whose time is billable and admin is a drain.</p>
+        </div>
+      </div>
+    </div>
+    <p class="text-center text-sm text-ink/40 mt-8">Not sure if it fits? The audit call will tell you honestly.</p>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     CREDIBILITY (honest — no fake numbers)
+     ============================================================ -->
+<section class="bg-ink py-20 px-4 sm:px-6">
+  <div class="max-w-4xl mx-auto">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-white">We run this stuff on ourselves first</h2>
+      <p class="mt-3 text-white/60 text-lg max-w-2xl mx-auto">
+        Autopilot Studio isn't a marketing agency that outsources to freelancers. It's built by an operator who runs their own autonomous systems — and uses the same tooling for every client build.
+      </p>
+    </div>
+    <div class="grid sm:grid-cols-3 gap-6">
+      <div class="bg-white/5 border border-white/10 rounded-2xl p-6 text-center">
+        <div class="text-3xl mb-3">📹</div>
+        <h3 class="text-white font-bold mb-2">Live content engine</h3>
+        <p class="text-white/50 text-sm">A fully autonomous YouTube content pipeline — scripting, voiceover, publishing — running without manual intervention daily.</p>
+      </div>
+      <div class="bg-white/5 border border-white/10 rounded-2xl p-6 text-center">
+        <div class="text-3xl mb-3">🛒</div>
+        <h3 class="text-white font-bold mb-2">E-commerce store</h3>
+        <p class="text-white/50 text-sm">A live Shopify store operated with agent-driven product management and automated customer flows.</p>
+      </div>
+      <div class="bg-white/5 border border-white/10 rounded-2xl p-6 text-center">
+        <div class="text-3xl mb-3">📈</div>
+        <h3 class="text-white font-bold mb-2">Trading research</h3>
+        <p class="text-white/50 text-sm">An autonomous quantitative research and paper-trading system. Real infrastructure, not a demo.</p>
+      </div>
+    </div>
+    <div class="mt-10 bg-white/5 border border-brand-500/30 rounded-2xl p-6 text-center">
+      <p class="text-white/80 text-base max-w-2xl mx-auto">
+        "I build these for clients using the same agent network I run every day. If a workflow is fragile or slow, I know it immediately — because it runs in my own stack first."
+      </p>
+      <p class="text-brand-500 text-sm font-semibold mt-3">— Esteban, founder</p>
+    </div>
+    <p class="mt-8 text-center text-white/30 text-sm">
+      We don't promise specific revenue outcomes or time savings — results depend on your business and how you use the automations. What we promise is showing up, building it properly, and managing it monthly.
+    </p>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     FAQ
+     ============================================================ -->
+<section id="faq" class="bg-white py-20 px-4 sm:px-6">
+  <div class="max-w-3xl mx-auto">
+    <div class="text-center mb-14">
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-ink">Frequently asked questions</h2>
+    </div>
+    <div class="space-y-4">
+
+      <details class="group border border-gray-200 rounded-xl overflow-hidden">
+        <summary class="flex items-center justify-between cursor-pointer px-6 py-5 font-semibold text-ink text-sm select-none">
+          What exactly happens on the free audit call?
+          <svg class="w-5 h-5 text-ink/40 group-open:rotate-180 transition-transform flex-shrink-0 ml-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+        </summary>
+        <div class="px-6 pb-5 text-ink/60 text-sm leading-relaxed">
+          It's a 30-minute conversation. We ask about your business, where you spend the most repetitive time, how leads come in, and what tools you already use. At the end you'll have a clear picture of what could be automated and whether any of our services are a fit. No hard sell — if it's not a match, we'll say so.
+        </div>
+      </details>
+
+      <details class="group border border-gray-200 rounded-xl overflow-hidden">
+        <summary class="flex items-center justify-between cursor-pointer px-6 py-5 font-semibold text-ink text-sm select-none">
+          How long does setup take?
+          <svg class="w-5 h-5 text-ink/40 group-open:rotate-180 transition-transform flex-shrink-0 ml-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+        </summary>
+        <div class="px-6 pb-5 text-ink/60 text-sm leading-relaxed">
+          Typically 5–10 business days from the time we have access to your accounts and all the info we need. We'll review the automation with you before anything goes live.
+        </div>
+      </details>
+
+      <details class="group border border-gray-200 rounded-xl overflow-hidden">
+        <summary class="flex items-center justify-between cursor-pointer px-6 py-5 font-semibold text-ink text-sm select-none">
+          What if I want to cancel?
+          <svg class="w-5 h-5 text-ink/40 group-open:rotate-180 transition-transform flex-shrink-0 ml-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+        </summary>
+        <div class="px-6 pb-5 text-ink/60 text-sm leading-relaxed">
+          Monthly retainers require 30 days notice. There's no long-term contract. If you cancel, we hand back everything we built — your automations, credentials, and documentation — cleanly.
+        </div>
+      </details>
+
+      <details class="group border border-gray-200 rounded-xl overflow-hidden">
+        <summary class="flex items-center justify-between cursor-pointer px-6 py-5 font-semibold text-ink text-sm select-none">
+          Do I need any technical knowledge?
+          <svg class="w-5 h-5 text-ink/40 group-open:rotate-180 transition-transform flex-shrink-0 ml-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+        </summary>
+        <div class="px-6 pb-5 text-ink/60 text-sm leading-relaxed">
+          No. You give us access to the tools you already use (email, Instagram, WhatsApp, your CRM, etc.) and we handle the rest. We document everything in plain language so you always know what's running.
+        </div>
+      </details>
+
+      <details class="group border border-gray-200 rounded-xl overflow-hidden">
+        <summary class="flex items-center justify-between cursor-pointer px-6 py-5 font-semibold text-ink text-sm select-none">
+          Will customers know they're talking to an AI?
+          <svg class="w-5 h-5 text-ink/40 group-open:rotate-180 transition-transform flex-shrink-0 ml-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+        </summary>
+        <div class="px-6 pb-5 text-ink/60 text-sm leading-relaxed">
+          That's your call. We can configure the AI to introduce itself or to reply in a way that matches your brand voice. Many clients prefer a clear "assistant" label; others integrate it seamlessly. We discuss this together during setup and follow your preference — and local laws around disclosure.
+        </div>
+      </details>
+
+      <details class="group border border-gray-200 rounded-xl overflow-hidden">
+        <summary class="flex items-center justify-between cursor-pointer px-6 py-5 font-semibold text-ink text-sm select-none">
+          What's GEO and why does it matter?
+          <svg class="w-5 h-5 text-ink/40 group-open:rotate-180 transition-transform flex-shrink-0 ml-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+        </summary>
+        <div class="px-6 pb-5 text-ink/60 text-sm leading-relaxed">
+          GEO stands for Generative Engine Optimization — how your brand appears in AI-generated answers (ChatGPT, Gemini, Perplexity). More people are skipping Google and asking AI directly. Our GEO Snapshot tells you what AI says about your business today and what to change to show up better over time.
+        </div>
+      </details>
+
+      <details class="group border border-gray-200 rounded-xl overflow-hidden">
+        <summary class="flex items-center justify-between cursor-pointer px-6 py-5 font-semibold text-ink text-sm select-none">
+          Can I combine services?
+          <svg class="w-5 h-5 text-ink/40 group-open:rotate-180 transition-transform flex-shrink-0 ml-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+        </summary>
+        <div class="px-6 pb-5 text-ink/60 text-sm leading-relaxed">
+          Yes. Many clients start with the AI Front Desk and add GEO Snapshot once it's running. We'll recommend what makes sense for your situation on the audit call.
+        </div>
+      </details>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     FINAL CTA
+     ============================================================ -->
+<section class="gradient-hero py-24 px-4 sm:px-6">
+  <div class="max-w-3xl mx-auto text-center">
+    <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-4">
+      Ready to stop answering the same DMs at midnight?
+    </h2>
+    <p class="text-white/60 text-lg mb-10 max-w-xl mx-auto">
+      Book a free 30-minute automation audit. No obligation, no pitch deck — just a clear map of what could run on autopilot in your business.
+    </p>
+    <!-- TODO: booking link -->
+    <a href="mailto:egiraldmu@gmail.com?subject=Automation%20audit%20request"
+       class="inline-flex items-center gap-2 bg-brand-500 hover:bg-brand-600 text-white font-bold px-10 py-5 rounded-xl text-lg transition-colors shadow-xl shadow-brand-900/40">
+      Book a free automation audit
+      <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+    </a>
+    <p class="mt-4 text-white/30 text-sm">Or email <a href="mailto:egiraldmu@gmail.com" class="underline hover:text-white/60">egiraldmu@gmail.com</a> directly.</p>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="bg-ink border-t border-white/5 py-10 px-4 sm:px-6">
+  <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6 text-sm">
+    <div class="flex items-center gap-2">
+      <svg class="w-6 h-6 text-brand-500" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect width="28" height="28" rx="6" fill="currentColor" fill-opacity="0.15"/>
+        <path d="M7 14a7 7 0 1 1 14 0" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+        <circle cx="14" cy="14" r="2.5" fill="currentColor"/>
+        <path d="M14 11.5V8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+      <span class="text-white font-bold">Autopilot <span class="text-brand-500">Studio</span></span>
+    </div>
+    <nav class="flex flex-wrap justify-center gap-6 text-white/40">
+      <a href="#how-it-works" class="hover:text-white/70 transition-colors">How it works</a>
+      <a href="#offers" class="hover:text-white/70 transition-colors">Services</a>
+      <a href="#faq" class="hover:text-white/70 transition-colors">FAQ</a>
+      <a href="https://egiraldmu1795.github.io/ai-workflow-pack/" target="_blank" rel="noopener" class="hover:text-white/70 transition-colors">Workflow Pack</a>
+      <a href="mailto:egiraldmu@gmail.com" class="hover:text-white/70 transition-colors">Contact</a>
+    </nav>
+    <p class="text-white/25 text-xs text-center sm:text-right">
+      &copy; 2026 Autopilot Studio.<br class="sm:hidden" /> No income guarantees expressed or implied.
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>
