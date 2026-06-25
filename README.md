@@ -1,4 +1,4 @@
-# Autopilot Studio — landing page
+# Switchboard AI — landing page
 
 Static single-file landing page for the AI automation agency.
 
@@ -15,7 +15,7 @@ Push to a GitHub Pages branch or any static host. No build step required.
 ## TODOs (before going live)
 
 - [ ] Replace `mailto:` CTAs with a real Calendly / booking link (search `TODO: booking link`)
-- [ ] Replace brand name if finalised — search/replace `Autopilot Studio` (see HTML comment at top)
+- [ ] Replace brand name if finalised — search/replace `Switchboard AI` (see HTML comment at top)
 - [ ] Add `og:image` meta tag with a real hero screenshot
 - [ ] Point a custom domain at the Pages site
 - [ ] Wire Stripe for payments
